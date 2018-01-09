@@ -1,7 +1,7 @@
-export const WithExport = () => null;
+export const withExport = () => null;
+const withoutExport = () => null;
 
-console.log({withExport: WithExport.name});
-
-const WithoutExport = () => null;
-
-console.log({withoutExport: WithoutExport.name});
+console.log({
+  withExport: withExport.name,
+  withoutExport: withoutExport.name,
+});
